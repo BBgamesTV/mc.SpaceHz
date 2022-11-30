@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Petit Prince Website</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" sizes="16x16" type="image/png" href="assets/logo.png">
+    </head>
+
+    <body>
+        <header>
+        <a href="#" class="logo">Petit Prince</a>
+        <ul>
+            <li><a href="#" class="active">>Home</a></1i>
+            <li><a href="#status">>Informations</a></1i>
+        </ul>
+        </header>
+        
+        <section id="menu">
+            <img src="assets/Cali/bg.png" id="bg">
+            <img src="assets/Cali/1.png" id="1">
+            <img src="assets/Cali/2.png" id="2">
+            <img src="assets/Cali/3.png" id="3">
+            <img src="assets/Cali/4.png" id="4">
+
+            <h2 id="text">Minecraft SpaceHz</h2>
+            <a href="#sec" id="btn">En savoir plus 📚</a>
+            <h3 class="underline" id="text2"> IP: minecraft.spacehz.xyz</h3>
+            
+        </section>
+
+        <div class="sec" id="sec">
+            <h2>>En Savoir Plus 📚</h2>
+            <br>
+            <p>
+                Serveur <mark>Minecraft Survie</mark> avec plugins pour un minecraft plus dynamique💥<br>
+                En <mark>1.19.2</mark> pour Les dernières fonctionnalités <a href="https://minecraft.fr/minecraft-1-19-wild-update-tout-contenu-de-la-mise-a-jour/">ici</a>
+                <br><br>
+                <h2>>Les Plugins / Datapack 🥤</h2>
+                <p><mark>Merci de Regarder les differents plugins pour etre au courant des ajouts du serveur</mark></p><br>
+                <ul>
+                    <li>
+                        <p style="font-size:0.7em">Marteau qui casse en 3x3 + (pack de texture) - Craft (jettes sur une Enclume une pioche en diamant + 2 block d'or)</p>
+                        <a href="https://www.planetminecraft.com/data-pack/hammer-mine-your-world-fr-amp-en/">Hammer</a><a href="https://www.planetminecraft.com/data-pack/hammer-mine-your-world-fr-amp-en/download/file/13286470/">Ressource Pack</a></li>
+                    <br>
+                    <li>
+                        <p style="font-size:0.7em">Ajoutes un événement RARE de nuit d'horreur</p>
+                        <a href="https://www.planetminecraft.com/data-pack/dark-swarm/">Dark Swarm</a></li>
+                    <br>
+                    <li>
+                        <p style="font-size:0.7em">minage avec un système de trésor qui a une chance d'apparaître lors d'un bloc lié à la pierre</p>
+                        <a href="https://www.planetminecraft.com/data-pack/mine-treasure/">Mine Treasure</a></li>
+                </ul>
+
+
+                <br><br>
+                <br>
+                <br> <br>
+
+
+                <div id="status">
+                    <h2>>Status Du Serveur 🌐</h2>
+                    <br>
+                    <p class="underline" style="font-size: 1.55em;">
+                        IP :    minecraft.spacehz.xyz<br>
+                        Version : 1.19.2
+                    </p><br>
+                    <img src="https://mcapi.us/server/image?ip=minecraft.spacehz.xyz&amp;theme=dark">
+                </div>
+                <p>  Create By Petit Prince © Spaceteam - 2022</p>
+            <a href="https://discord.com/invite/a5B4tzEhBT" id="btn">Mon Discord 🦕</a>
+            <a href="https://github.com/BBgamesTV?tab=repositories" id="btn">Mon Github 💻</a>
+            <a href="#menu" id="btn">Haut de la page ⏫</a>
+            
+        </div>
+    
+        <script>
+            let text = document.getElementById('text')
+            let button = document.getElementById('btn')
+            let text2 = document.getElementById('text2')
+
+            let blue = document.getElementById('1')
+            let rouge = document.getElementById('2')
+            let rose = document.getElementById('3')
+            let violet = document.getElementById('4')
+
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                console.dir(value)
+                text.style.marginLeft= value * 1.7 + 'px';
+                text2.style.marginTop= value * 1.12 + 'px';
+                button.style.marginLeft = value * 1.9 + 'px';
+                
+                blue.style.top = value * 0.99 + 'px';
+                rouge.style.top = value * 0.70 + 'px';
+                rose.style.top = value * 0.45 + 'px';
+            })
+        </script>
